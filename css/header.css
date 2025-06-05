@@ -34,7 +34,12 @@
   align-items: center;
 }
 
+.header_top_scroll {
+  padding: 0;
+}
+
 .header_top_left {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -43,6 +48,9 @@
 .logo {
   width: 144px;
   height: 22px;
+}
+.logo_hide {
+  display: none;
 }
 
 .search {
@@ -55,6 +63,12 @@
   padding-right: 25px;
   display: flex;
   align-items: center;
+}
+
+.search_scroll {
+  position: absolute;
+  left: 190px;
+  top: 8px;
 }
 
 .search form {
@@ -82,6 +96,10 @@
   height: 50px;
 }
 
+.sale_hide {
+  display: none;
+}
+
 .sale img {
   width: 100%;
   height: auto;
@@ -94,6 +112,10 @@
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.link_site_hide {
+  display: none;
 }
 
 .link_site li {
@@ -143,14 +165,14 @@
   background-color: #000000;
 }
 
-.member_menu {
-  display: flex;
-  gap: 25px;
-}
-
 .header_bottom {
   display: flex;
   justify-content: space-between;
+}
+
+.member_menu {
+  display: flex;
+  gap: 25px;
 }
 
 .member_menu li a {
@@ -162,6 +184,10 @@
   height: 48px;
 }
 
+.height_62 {
+  height: 62px !important;
+}
+
 /* 모바일 메뉴 */
 
 .mobile_header {
@@ -170,7 +196,7 @@
   top: 0;
   z-index: 999;
   display: none;
-  
+
   width: 100%;
   padding: 15px 20px;
   background-color: #fff;

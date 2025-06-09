@@ -47,7 +47,7 @@ window.addEventListener("DOMContentLoaded", function () {
   // 슬라이드 갯수
   const total = apiData.length;
   // 슬라이드 배치 장소
-  const bannerPos = this.document.querySelector(".sw_banner .swiper-wrapper");
+  const bannerPos = document.querySelector(".sw_banner .swiper-wrapper");
 
   // html 태그 만들기
   const tag = `

@@ -15,11 +15,10 @@
 }
 .banner_slide_item {
   display: block;
-  border-radius: 15px;
   overflow: hidden;
 
   height: 345px;
-  background-color: red;
+  border-radius: 15px;
 }
 .banner_slide_item img {
   /* 이미지를 보기 좋게 비율을 유지하면서 채우기 */
@@ -29,27 +28,26 @@
 }
 
 .banner_slide_prev {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  z-index: 100;
-
-  transform: translateY(-50%) translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border: 1px solid #e5e5e5;
-  background-color: rgba(255, 255, 255, 0.5);
+
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 100;
 
   width: 48px;
   height: 48px;
-  border-radius: 24px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
 
   cursor: pointer;
 
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+  transform: translateY(-50%) translateX(-50%);
+  border-radius: 24px;
 }
 
 .banner_slide_prev img {
@@ -57,28 +55,28 @@
 }
 
 .banner_slide_next {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  z-index: 100;
-
-  transform: translateY(-50%) translateX(50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border: 1px solid #e5e5e5;
-  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 100;
 
   width: 48px;
   height: 48px;
-  border-radius: 50%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
 
   cursor: pointer;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+
+  transform: translateY(-50%) translateX(50%);
+  border-radius: 50%;
 }
 
+/* 처음에는 페이지 네이션이 안보인다. */
 .banner_slide_pg {
   display: none;
 }
@@ -92,10 +90,52 @@
   .banner_slide_item {
     height: 202px;
   }
+  /* 페이지네이션이 보여야함 */
+  .banner_slide_pg {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  /* 기본 버튼들의 모양 CSS */
+  .banner_slide_pg .swiper-pagination-bullet {
+  }
+  /* 포커스된 버튼의 모양 CSS */
+  .banner_slide_pg .swiper-pagination-bullet-active {
+    background-color: #000000;
+  }
+
+  /* ,(쉼표로) 다중으로 선택함 */
+  .banner_slide_next,
+  .banner_slide_prev {
+    display: none;
+  }
 }
 
 @media all and (max-width: 760px) {
   .sw_banner {
     max-width: 350px;
+  }
+  /* 페이지 네이션 위치 배너 안쪽으로 조절하기 */
+  .banner_slide_pg {
+    align-items: center;
+    padding-top: 0px;
+    /* transfrom은 위치 말고 내용물만 이동함 */
+    transform: translateY(-15px);
+    /* z-index 가 비활성화 된다면 position 설정 해야함 */
+    position: relative;
+    z-index: 100;
+  }
+  .banner_slide_pg .swiper-pagination-bullet {
+    background-color: white;
+    opacity: 0.6;
+    width: 6px;
+    height: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .banner_slide_pg .swiper-pagination-bullet-active {
+    background-color: white;
+    opacity: 1;
+    width: 8px;
+    height: 8px;
   }
 }

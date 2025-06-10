@@ -1,0 +1,129 @@
+.tour {
+  position: relative;
+}
+.layout {
+  max-width: 1280px;
+  width: 100%;
+  /* /영역 가운데 정렬/ 위아래양옆 따로 설정가능 margin-top..등등 */
+  margin: 0 auto;
+}
+.tour_top {
+  padding-top: 65px;
+  padding-bottom: 25px;
+}
+.tour_top_title {
+  display: block;
+  width: 100%;
+}
+.title {
+  /* 중앙 정렬
+      display: flex;
+  justify-content: center;  */
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #000000;
+  /* 색상 표현 다른 코드
+  color: rgb(0,0,0)
+  투명도 추가 색상 코드
+  color:rgba(0,0,0,1) */
+}
+.subtitle {
+  /* 글자영역1 정렬하기 */
+  text-align: center;
+  color: rgba(18, 18, 18, 0.5);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.tour_top_category {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.tour_button_list {
+  display: flex;
+  gap: 6px;
+}
+.tour_button_list li {
+  display: block;
+}
+.tour_button_list li button {
+  border-radius: 22px;
+  border: 1px solid #e5e5e5;
+  /* padding: 11px 16px; */
+  height: 44px;
+  padding: 0 18px;
+  background-color: #fff;
+  /* 마우스 커서 이미지 활성화 */
+  cursor: pointer;
+}
+.tour_button_list li button:active {
+  opacity: 0.65;
+}
+.tour_focus {
+  background-color: #333 !important;
+  color: #fff !important;
+  font-weight: 600;
+}
+.tour_bottom {
+  display: block;
+  width: 100%;
+}
+.tour_bottom_wrap {
+  /* 포지션 들어가는 이유: 버튼 위치 설정하기위해서 */
+  position: relative;
+}
+.tour_slide {
+  display: flex;
+  gap: 26px;
+}
+.tour_item {
+  display: block;
+  height: 365px;
+  border-radius: 12px;
+  /* 영역을 벗어난것 숨기기 */
+  overflow: hidden;
+}
+.tour_item_image {
+  width: 100%;
+  height: 255px;
+}
+.tour_item_image img {
+  /* 영역안에 이미지 나타내기 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tour_item_info {
+  position: relative;
+  padding: 20px;
+}
+.tour_item_info .city {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  /* 위 좌표 고정 트랜스 폼으로 Y축 이동 */
+  transform: translateY(-50%);
+  background-color: #4154ff;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.tour_item_info .sale {
+}
+.tour_item_info .item_title {
+}
+.tour_item_info .price {
+}
+
+.tour_slide_prev {
+}
+.tour_slide_next {
+}
+.tour_more {
+}
+.tour_more_bt {
+}

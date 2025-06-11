@@ -98,12 +98,12 @@
   object-fit: cover;
 }
 .tour_item_info {
-  /* (여백없애기) 전체 높이에서 이미지 높이빼기 */
-  height: calc(100% - 255px);
   padding: 20px;
-  position: relative;
   border: 1px solid #f0f0f0;
   border-top: none;
+  position: relative;
+  /* (여백없애기) 전체 높이에서 이미지 높이빼기 */
+  height: calc(100% - 255px);
   border-radius: 0px 0px 12px 12px;
 }
 .tour_item_info .tour_city {
@@ -123,6 +123,9 @@
   font-size: 15px;
   font-weight: 400;
   color: rgb(65, 84, 255);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 /* 한줄 말줄임 (...)css로 작업 */
@@ -137,9 +140,9 @@
   overflow: hidden;
 }
 .tour_item_info .tour_price {
-  color: #111;
   font-size: 15px;
   font-weight: 400;
+  color: #111;
 }
 .tour_item_info .tour_price b {
   font-size: 20px;
@@ -147,55 +150,73 @@
 }
 
 .tour_slide_prev {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
-  background-color: rgba(255, 255, 255, 0.5);
   border: 1px solid #e5e5e5;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 999;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
+  transform: translateY(-50%) translateX(-50%);
+  border-radius: 24px;
 }
 .tour_slide_prev img {
   /* 이미지 뒤집기 */
   transform: rotate(180deg);
 }
 .tour_slide_next {
-  position: absolute;
-  right: 0;
-  top: 50%;
-
-  transform: translateY(-50%) translateX(50%);
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
-  background-color: rgba(255, 255, 255, 0.5);
   border: 1px solid #e5e5e5;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 999;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
+
+  transform: translateY(-50%) translateX(50%);
+  border-radius: 24px;
 }
 .tour_more {
-  padding-top: 50px;
   /* liline 요소 (a태그(글자),이미지 요소)를 가운데 정렬할때는
   text-align :center사용. 글자에서 버튼같은 공간 요소가 들어갈때는 display 사용*/
   display: flex;
   justify-content: center;
+  padding-top: 50px;
 }
 .tour_more_bt {
   display: flex;
-  align-items: center;
   gap: 7px;
-  height: 56px;
-  border-radius: 26px;
+  align-items: center;
   padding: 0 30px;
 
   border: 1px solid #e5e5e5;
+  height: 56px;
   background-color: #fff;
   font-size: 16px;
   font-weight: 700;
   color: #333;
+  border-radius: 26px;
 }
 
+.swiper-button-disabled {
+  display: none !important;
+}
+
+/* 반응형 코드 */
+@media all and (max-width: 1280px) {
+}
+@media all and (max-width: 1024px) {
+  .tour_slide_wrap {
+    width: 1024px;
+  }
+}
+@media all and (max-width: 960px) {
+}
+@media all and (max-width: 760px) {
+}

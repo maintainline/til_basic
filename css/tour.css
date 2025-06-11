@@ -2,10 +2,10 @@
   position: relative;
 }
 .layout {
-  max-width: 1280px;
-  width: 100%;
   /* /영역 가운데 정렬/ 위아래양옆 따로 설정가능 margin-top..등등 */
   margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
 }
 .tour_top {
   padding-top: 65px;
@@ -16,25 +16,25 @@
   width: 100%;
 }
 .title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #000000;
   /* 중앙 정렬
       display: flex;
   justify-content: center;  */
   text-align: center;
-  font-size: 28px;
-  font-weight: 600;
-  color: #000000;
   /* 색상 표현 다른 코드
   color: rgb(0,0,0)
   투명도 추가 색상 코드
   color:rgba(0,0,0,1) */
 }
 .subtitle {
-  /* 글자영역1 정렬하기 */
-  text-align: center;
-  color: rgba(18, 18, 18, 0.5);
+  margin-bottom: 20px;
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 20px;
+  color: rgba(18, 18, 18, 0.5);
+  /* 글자영역1 정렬하기 */
+  text-align: center;
 }
 .tour_top_category {
   display: flex;
@@ -49,30 +49,32 @@
   display: block;
 }
 .tour_button_list li button {
-  border-radius: 22px;
+  padding: 0 18px;
   border: 1px solid #e5e5e5;
   /* padding: 11px 16px; */
   height: 44px;
-  padding: 0 18px;
   background-color: #fff;
   /* 마우스 커서 이미지 활성화 */
   cursor: pointer;
+  border-radius: 22px;
 }
 .tour_button_list li button:active {
   opacity: 0.65;
 }
 .tour_focus {
   background-color: #333 !important;
-  color: #fff !important;
   font-weight: 600;
+  color: #fff !important;
 }
 .tour_bottom {
   display: block;
   width: 100%;
 }
-.tour_bottom_wrap {
+.tour_slide_wrap {
+  display: block;
   /* 포지션 들어가는 이유: 버튼 위치 설정하기위해서 */
   position: relative;
+  width: 100%;
 }
 .tour_slide {
   display: flex;
@@ -80,10 +82,10 @@
 }
 .tour_item {
   display: block;
-  height: 365px;
-  border-radius: 12px;
   /* 영역을 벗어난것 숨기기 */
   overflow: hidden;
+  height: 365px;
+  border-radius: 12px;
 }
 .tour_item_image {
   width: 100%;
@@ -96,34 +98,104 @@
   object-fit: cover;
 }
 .tour_item_info {
-  position: relative;
+  /* (여백없애기) 전체 높이에서 이미지 높이빼기 */
+  height: calc(100% - 255px);
   padding: 20px;
+  position: relative;
+  border: 1px solid #f0f0f0;
+  border-top: none;
+  border-radius: 0px 0px 12px 12px;
 }
-.tour_item_info .city {
+.tour_item_info .tour_city {
+  padding: 5px 10px;
   position: absolute;
-  left: 20px;
   top: 0;
-  /* 위 좌표 고정 트랜스 폼으로 Y축 이동 */
-  transform: translateY(-50%);
+  left: 20px;
   background-color: #4154ff;
-  color: #fff;
   font-size: 13px;
   font-weight: 700;
-  padding: 5px 10px;
+  color: #fff;
+  /* 위 좌표 고정 트랜스 폼으로 Y축 이동 */
+  transform: translateY(-50%);
   border-radius: 4px;
 }
-.tour_item_info .sale {
+.tour_item_info .tour_sale {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(65, 84, 255);
 }
-.tour_item_info .item_title {
+
+/* 한줄 말줄임 (...)css로 작업 */
+/* 한줄 이상 말줄임 (...)css로 작업 */
+.tour_item_info .tour_item_title {
+  font-size: 15px;
+  font-weight: 400;
+  color: #515151;
+  /* 한줄로 말줄임 <보관!> */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.tour_item_info .price {
+.tour_item_info .tour_price {
+  color: #111;
+  font-size: 15px;
+  font-weight: 400;
+}
+.tour_item_info .tour_price b {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .tour_slide_prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+  cursor: pointer;
+}
+.tour_slide_prev img {
+  /* 이미지 뒤집기 */
+  transform: rotate(180deg);
 }
 .tour_slide_next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+
+  transform: translateY(-50%) translateX(50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+  cursor: pointer;
 }
 .tour_more {
+  padding-top: 50px;
+  /* liline 요소 (a태그(글자),이미지 요소)를 가운데 정렬할때는
+  text-align :center사용. 글자에서 버튼같은 공간 요소가 들어갈때는 display 사용*/
+  display: flex;
+  justify-content: center;
 }
 .tour_more_bt {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 56px;
+  border-radius: 26px;
+  padding: 0 30px;
+
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
 }
+

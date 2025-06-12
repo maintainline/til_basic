@@ -897,9 +897,14 @@ if(true냐 false 냐 조건 판단){
 <!-- 개발자 클래스와 내용 부분 수정 가능 -->
 <div class="swiper 개발자 클래스">
   <div class="swiper-wrapper">
-    <dix class="swiper-slide">내용</dix>
-    <dix class="swiper-slide">내용</dix>
-    <dix class="swiper-slide">내용</dix>
+    <dix class="swiper-slide">1</dix>
+    <dix class="swiper-slide">2</dix>
+    <dix class="swiper-slide">3</dix>
+    <dix class="swiper-slide">4</dix>
+    <dix class="swiper-slide">5</dix>
+    <dix class="swiper-slide">6</dix>
+    <dix class="swiper-slide">7</dix>
+    <dix class="swiper-slide">8</dix>
   </div>
 </div>
 ```
@@ -983,6 +988,7 @@ window.addEventListener("load", function () {
 - 좌측, 우측 슬라이드 이동버튼
 - 첫 페이지와, 마지막 페이지에서 버튼 숨기기 적용
 - 원본 swiper 예제의 버튼의 클래스 명을 꼭 알아내서 활용하자.
+
 ```css
 .swiper-button-disabled {
   display: none !important;

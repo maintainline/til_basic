@@ -162,6 +162,7 @@
   cursor: pointer;
   transform: translateY(-50%) translateX(-50%);
   border-radius: 24px;
+
 }
 .tour_slide_prev img {
   /* 이미지 뒤집기 */

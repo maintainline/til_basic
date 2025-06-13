@@ -1,9 +1,9 @@
 window.addEventListener("load", function () {
   // swiper 만들기 실행
   new Swiper(".ticket_slide", {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 20,
-    slidesPerGroup: 4,
+    slidesPerGroup: 1,
 
     navigation: {
       nextEl: ".ticket_slide_next",
@@ -16,13 +16,9 @@ window.addEventListener("load", function () {
         spaceBetween: 20,
       },
       1024: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        slidesPerGroup: 3,
-      },
-      960: {
         slidesPerView: 4,
         spaceBetween: 20,
+        
       },
     },
   });

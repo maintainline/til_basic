@@ -653,6 +653,24 @@
 }
 ```
 
+## 4.11. Gradient 온라인도구
+
+- https://cssgradient.io/
+
+## 4.12. 두줄 말 줄임 코드 (...처리)
+
+```css
+대상 {
+  /* 2줄 말줄이기 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+```
+
 # 5. javaScript 의 이해
 
 - Java 는 객체지향 프로그래밍, javaScript 는 스크립트 프로그래밍

@@ -11,6 +11,10 @@
 }
 .ticket_top_title {
   display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 .ticket_top_text {
   font-size: 28px;
@@ -34,6 +38,7 @@
 }
 .ticket_button_list {
   display: flex;
+  justify-content: center;
   gap: 5px;
   padding-bottom: 20px;
 }
@@ -68,6 +73,7 @@
 }
 .ticket_slide_item {
   display: block;
+
   width: 100%;
   border-radius: 11px;
 }
@@ -199,7 +205,8 @@
 .ticket_footer {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 20px;
+  background-color: red; 
 }
 .ticket_moer_bt {
   display: flex;
@@ -212,7 +219,7 @@
   font-size: 16px;
   font-weight: 700;
   color: #333;
-  border-radius: 26px;
+  border-radius: 23px;
 }
 
 /* 반응형 */

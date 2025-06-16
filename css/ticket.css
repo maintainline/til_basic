@@ -1,11 +1,12 @@
 .ticket {
   position: relative;
+  padding-top: 60px;
 }
 .layout {
   position: relative;
 }
 .ticket_top {
-  padding-top: 60px;
+  padding-bottom: 20px;
   position: relative;
 }
 .ticket_top_title {
@@ -27,12 +28,13 @@
 .ticket_top_category {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
-  width: 100%;
+  /* padding-top: 20px;
+  width: 100%; */
+  margin-bottom: 25px;
 }
 .ticket_button_list {
   display: flex;
-  gap: 8px;
+  gap: 5px;
   padding-bottom: 20px;
 }
 
@@ -49,6 +51,7 @@
   cursor: pointer;
   border-radius: 22px;
   color: #111;
+  white-space: nowrap;
 }
 .ticket_focus {
   border: 1px solid#333;
@@ -219,6 +222,46 @@
 @media all and (max-width: 1080px) {
 }
 @media all and (max-width: 1024px) {
+  .ticket {
+    padding-top: 20px;
+    border-top: 8px solid#f0f4f4;
+  }
+  .ticket_top {
+    padding-bottom: 15px;
+  }
+  .ticket_top_text {
+    font-size: 20px;
+  }
+  .ticket_top_subtext {
+    font-size: 15px;
+    padding-top: 0;
+  }
+  .ticket_top_category {
+    margin-bottom: 20px;
+  }
+  .ticket_button_list li button {
+    height: 34px;
+  }
+  /* .ticket_image{
+    width: 150px;
+    height: 200px;
+  } */
+  .ticket_info {
+    padding: 10px;
+  }
+  .ticket_item_title {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .ticket_footer {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+  .ticket_moer_bt {
+    width: 100%;
+    border-radius: 4px;
+    height: 48px;
+  }
 }
 @media all and (max-width: 960px) {
 }

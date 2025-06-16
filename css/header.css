@@ -188,7 +188,7 @@
 
 .mobile_header {
   display: none;
-  padding: 15px 20px;
+  padding: 8px 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -196,6 +196,9 @@
 
   width: 100%;
   background-color: #fff;
+}
+.mobile_scroll_line {
+  border-bottom: 1px solid#dfdfdf;
 }
 
 .mobile_menu {

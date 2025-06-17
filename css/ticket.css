@@ -10,8 +10,6 @@
   position: relative;
 }
 .ticket_top_title {
-  display: block;
-  display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -28,6 +26,7 @@
   font-weight: 400;
   color: rgba(18, 18, 18, 0.5);
   text-align: center;
+  padding-top: 15px;
 }
 .ticket_top_category {
   display: flex;
@@ -67,9 +66,9 @@
 .ticket_slide_wrap {
   position: relative;
 }
-.ticket_slide {
+.sticket_slide {
   display: flex;
-  gap: 27px;
+  gap: 20px;
 }
 .ticket_slide_item {
   display: block;
@@ -206,11 +205,11 @@
   display: flex;
   justify-content: center;
   padding-top: 20px;
-  background-color: red; 
+  position: relative;
 }
 .ticket_moer_bt {
   display: flex;
-  gap: 8px;
+  gap: 7px;
   align-items: center;
   justify-content: center;
   padding: 0 40px;
@@ -252,7 +251,7 @@
   /* .ticket_image{
     width: 150px;
     height: 200px;
-  } */
+  }  */
   .ticket_info {
     padding: 10px;
   }

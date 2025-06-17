@@ -149,7 +149,7 @@ window.addEventListener("load", function () {
     html = html + tag;
   }
 
-  console.log("만들어진 태그 :", html);
+  // console.log("만들어진 태그 :", html);
 
   tripPos.innerHTML = html;
 

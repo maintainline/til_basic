@@ -15,7 +15,46 @@ window.addEventListener("load", function () {
       서브타이틀: "휘닉스 리조트 평창 <br/> 85% <b>123,670</b>원",
     },
     {
-      uid: 1,
+      uid: 2,
+      링크: "#",
+      메인이미지:
+        "https://common-live-vod.interparkcdn.net/data/image/20250617/14/96/20250617021040.png",
+      방송: "방송예정",
+      타이틀: "[싱가포르항공] 월드 클래스 서비스 항공사 싱가포르/허니문/호주노선 특가",
+      날짜: "06월 18일(수)",
+      시간: "11:00",
+      서브이미지:
+        "",
+      서브타이틀: "",
+    },
+    {
+      uid: 3,
+      링크: "#",
+      메인이미지:
+        "//common-live-vod.interparkcdn.net/data/image/20250612/14/159/20250612081732.png",
+      방송: "방송예정",
+      타이틀: "[몬드리안 이태원&테이크호텔 서울광명&인제 스피디움] 도심 호캉스&강원 숲캉스 특집!",
+      날짜: "06월 19일(목)",
+      시간: "19:00",
+      서브이미지:
+        "",
+      서브타이틀: "",
+    },
+    {
+      uid: 4,
+      링크: "#",
+      메인이미지:
+        "",
+      방송: "라이브 다시보기",
+      타이틀: "[푸꾸옥 자유여행] 여름맞이 평창&제주 특가",
+      날짜: "06월 17일(화)",
+      시간: "19:00",
+      서브이미지:
+        "//media.interparkcdn.net/interpark-tour/image/upload/w_640,h_410,c_limit/v1740638604/domstay/d519fa2509854812.jpg",
+      서브타이틀: "휘닉스 리조트 평창 85% 123,670원",
+    },
+    {
+      uid: 5,
       링크: "#",
       메인이미지:
         "//media.interparkcdn.net/interpark-tour/image/upload/w_640,h_410,c_limit/v1740638604/domstay/d519fa2509854812.jpg",
@@ -28,7 +67,7 @@ window.addEventListener("load", function () {
       서브타이틀: "휘닉스 리조트 평창 85% 123,670원",
     },
     {
-      uid: 1,
+      uid: 6,
       링크: "#",
       메인이미지:
         "//media.interparkcdn.net/interpark-tour/image/upload/w_640,h_410,c_limit/v1740638604/domstay/d519fa2509854812.jpg",
@@ -41,7 +80,7 @@ window.addEventListener("load", function () {
       서브타이틀: "휘닉스 리조트 평창 85% 123,670원",
     },
     {
-      uid: 1,
+      uid: 7,
       링크: "#",
       메인이미지:
         "//media.interparkcdn.net/interpark-tour/image/upload/w_640,h_410,c_limit/v1740638604/domstay/d519fa2509854812.jpg",
@@ -54,46 +93,7 @@ window.addEventListener("load", function () {
       서브타이틀: "휘닉스 리조트 평창 85% 123,670원",
     },
     {
-      uid: 1,
-      링크: "#",
-      메인이미지:
-        "//media.interparkcdn.net/interpark-tour/image/upload/w_640,h_410,c_limit/v1740638604/domstay/d519fa2509854812.jpg",
-      방송: "방송예정",
-      타이틀: "[휘닉스 브랜드 호텔&리조트] 여름맞이 평창&제주 특가",
-      날짜: "06월 17일(화)",
-      시간: "19:00",
-      서브이미지:
-        "//media.interparkcdn.net/interpark-tour/image/upload/w_640,h_410,c_limit/v1740638604/domstay/d519fa2509854812.jpg",
-      서브타이틀: "휘닉스 리조트 평창 85% 123,670원",
-    },
-    {
-      uid: 1,
-      링크: "#",
-      메인이미지:
-        "//media.interparkcdn.net/interpark-tour/image/upload/w_640,h_410,c_limit/v1740638604/domstay/d519fa2509854812.jpg",
-      방송: "방송예정",
-      타이틀: "[휘닉스 브랜드 호텔&리조트] 여름맞이 평창&제주 특가",
-      날짜: "06월 17일(화)",
-      시간: "19:00",
-      서브이미지:
-        "//media.interparkcdn.net/interpark-tour/image/upload/w_640,h_410,c_limit/v1740638604/domstay/d519fa2509854812.jpg",
-      서브타이틀: "휘닉스 리조트 평창 85% 123,670원",
-    },
-    {
-      uid: 1,
-      링크: "#",
-      메인이미지:
-        "//media.interparkcdn.net/interpark-tour/image/upload/w_640,h_410,c_limit/v1740638604/domstay/d519fa2509854812.jpg",
-      방송: "방송예정",
-      타이틀: "[휘닉스 브랜드 호텔&리조트] 여름맞이 평창&제주 특가",
-      날짜: "06월 17일(화)",
-      시간: "19:00",
-      서브이미지:
-        "//media.interparkcdn.net/interpark-tour/image/upload/w_640,h_410,c_limit/v1740638604/domstay/d519fa2509854812.jpg",
-      서브타이틀: "휘닉스 리조트 평창 85% 123,670원",
-    },
-    {
-      uid: 1,
+      uid: 8,
       링크: "#",
       메인이미지:
         "//media.interparkcdn.net/interpark-tour/image/upload/w_640,h_410,c_limit/v1740638604/domstay/d519fa2509854812.jpg",

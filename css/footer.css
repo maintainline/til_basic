@@ -83,6 +83,7 @@
   padding: 20px 15px;
 
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
 }
 .more_list li {
 }
@@ -133,11 +134,26 @@
 .footer_contact_box {
 }
 .footer_contact_box > h3 {
+  font-size: 14px;
+  color: #111;
+  padding-bottom: 10px;
 }
 
 .footer_contact_box > ul {
+  color: #6a6a6c;
+  font-size: 12px;
+  line-height: 1.5;
+  /* background-color: red;// */
 }
 .footer_contact_box > ul > li {
+}
+.footer_contact_box > ul > li > a {
+  text-decoration: underline;
+  color: blue;
+}
+.footer_contact_box > ul > li > address {
+  margin-bottom: 4px;
+  font-style: normal;
 }
 .footer_copyright {
 }

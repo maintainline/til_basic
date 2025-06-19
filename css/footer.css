@@ -8,6 +8,8 @@
 }
 .footer_top {
   border-top: 1px solid#e4e4e4;
+  z-index: 9999;
+  position: relative;
 }
 
 .footer_menu_list {
@@ -83,7 +85,6 @@
   padding: 20px 15px;
 
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
-  z-index: 9999;
 }
 .more_list li {
 }
@@ -92,33 +93,6 @@
   color: #333;
   white-space: nowrap;
   line-height: 1.8;
-}
-
-/* 하단 메뉴 바 반응형 */
-@media all and (max-width: 1280px) {
-}
-@media all and (max-width: 1250px) {
-  .footer_menu_list > li::after {
-    right: -30px;
-  }
-}
-@media all and (max-width: 1200px) {
-  .footer_menu_list > li::after {
-    right: -26px;
-  }
-}
-@media all and (max-width: 1140px) {
-  .footer_menu_list > li::after {
-    right: -20px;
-  }
-}
-@media all and (max-width: 1024px) {
-  .footer_top {
-    display: none;
-  }
-  .footer_bottom {
-    display: none;
-  }
 }
 
 /* footer 하단 */
@@ -156,4 +130,103 @@
   font-style: normal;
 }
 .footer_copyright {
+  font-size: 12px;
+  color: #6a6a6c;
+  padding-bottom: 45px;
+}
+.footer_copyright p {
+  margin-bottom: 4px;
+}
+
+/* 하단 메뉴 바 반응형 */
+@media all and (max-width: 1280px) {
+}
+@media all and (max-width: 1250px) {
+  .footer_menu_list > li::after {
+    right: -30px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .footer_menu_list > li::after {
+    right: -26px;
+  }
+}
+@media all and (max-width: 1140px) {
+  .footer_menu_list > li::after {
+    right: -20px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .footer {
+    display: none;
+  }
+}
+
+/* 모바일 하단 작업 */
+.mb_footer {
+  background-color: #f7f7f8;
+  padding: 20px;
+}
+
+.mb_footer_menu {
+}
+.mb_footer_menu nav {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.mb_footer_menu nav a {
+  color: #7c7c86;
+}
+
+.bar {
+  display: block;
+  width: 1px;
+  height: 12px;
+  background-color: #e2e2e4;
+  margin: 0 12px;
+}
+
+.mb_footer_info {
+}
+
+.mb_footer_link {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 31px;
+}
+
+.cirle {
+  margin: 0 18px;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+
+.mb_footer_copy {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  font-size: 10px;
+  color: #bfbfc0;
+}
+
+.mb_footer_hide {
+  /* display: none; */
+}
+
+#mb_bt {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#mb_bt i {
+}
+#mb_bt i img {
 }

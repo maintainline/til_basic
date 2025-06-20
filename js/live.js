@@ -24,7 +24,7 @@ window.addEventListener("load", function () {
         "[싱가포르항공] 월드 클래스 서비스 항공사 싱가포르/허니문/호주노선 특가",
       날짜: "06월 18일(수)",
       시간: "11:00",
-      서브이미지:"" ,
+      서브이미지: "",
       서브타이틀: "",
     },
     {
@@ -87,7 +87,8 @@ window.addEventListener("load", function () {
       메인이미지:
         "https://common-live-vod.interparkcdn.net/data/image/20250410/14/96/20250410063525.png",
       방송: "라이브 다시보기",
-      타이틀: "[진에어] 선착순 쿠폰! 전 노선 위탁수하물 15KG 포함 라이브 특가💚",
+      타이틀:
+        "[진에어] 선착순 쿠폰! 전 노선 위탁수하물 15KG 포함 라이브 특가💚",
       날짜: "",
       시간: "",
       서브이미지:
@@ -134,19 +135,25 @@ window.addEventListener("load", function () {
             <div class="live_day_date">${liveApiData[i].날짜}</div>
             <div class="live_day_time">${liveApiData[i].시간}</div>
           </div>
-        </div>
-        <div class="live_detale">
-          <div class="live_detale_image">
-            <img
-              src="${liveApiData[i].서브이미지}"
-              alt="${liveApiData[i].타이틀}"
-            />
-          </div>
-          <p class="live_detale_title">
-            ${liveApiData[i].서브타이틀}
-          </p>
-        </div>
-      </a>
+        </div>`;
+
+    if (liveApiData[i].서브이미지 !== "") {
+      tag =
+        tag +
+        ` <div class="live_detale">
+      <div class="live_detale_image">
+        <img
+          src="${liveApiData[i].서브이미지}"
+          alt="${liveApiData[i].타이틀}"
+        />
+      </div>
+      <p class="live_detale_title">${liveApiData[i].서브타이틀}</p>
+    </div>`;
+    }
+
+    tag =
+      tag +
+      `</a>
     </div>
     </div>
     `;

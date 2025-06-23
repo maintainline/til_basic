@@ -1,7 +1,19 @@
-window.addEventListener("load", () => {
+declare var Swiper: any;
+window.addEventListener("load", (): void => {
   // console.log("안녕")
   // 데이터
-  const tripApiData = [
+  type TripDataType = {
+    링크: string;
+    이미지: string;
+    alt: string;
+    대상: string;
+    상품타이틀: string;
+    스케줄: string[];
+    상품가격: string;
+    정상가: string;
+  };
+
+  const tripApiData: TripDataType[] = [
     {
       링크: "#",
       이미지:
@@ -101,14 +113,17 @@ window.addEventListener("load", () => {
   ];
 
   // html 태그 만들고 배치하기
-  const tripPos = document.querySelector(".sw_trip .swiper-wrapper");
-  let html = ``;
+  const tripPos: Element | null = document.querySelector(
+    ".sw_trip .swiper-wrapper"
+  );
+  let html: string = ``;
 
   // 실제 데이터 갯수 만큼 swiper-slide 태그 만들어 배치하기
+  function makeHtml(): void {
+    html = "";
 
-  html = "";
-  for (let i = 0; i < tripApiData.length; i++) {
-    let tag = `<dix class="swiper-slide">
+    for (let i: number = 0; i < tripApiData.length; i++) {
+      let tag = `<dix class="swiper-slide">
     <a href="${tripApiData[i].링크}" class="trip_slide_item">
       <div class="trip_image">
         <img
@@ -127,13 +142,13 @@ window.addEventListener("load", () => {
         <p class="trip_schedule">
         `;
 
-    for (let j = 0; j < tripApiData[i].스케줄.length; j++) {
-      tag = tag + `<span>${tripApiData[i].스케줄[j]}</span>`;
-    }
+      for (let j: number = 0; j < tripApiData[i].스케줄.length; j++) {
+        tag = tag + `<span>${tripApiData[i].스케줄[j]}</span>`;
+      }
 
-    tag =
-      tag +
-      `</p>
+      tag =
+        tag +
+        `</p>
 
 
         <p class="trip_price">
@@ -146,37 +161,43 @@ window.addEventListener("load", () => {
   </dix>   
     `;
 
-    html = html + tag;
+      html = html + tag;
+    }
+
+    // console.log("만들어진 태그 :", html);
+
+    tripPos!.innerHTML = html;
   }
 
-  // console.log("만들어진 태그 :", html);
-
-  tripPos.innerHTML = html;
-
   // swiper 만들기 실행
-  new Swiper(".sw_trip", {
-    slidesPerView: 5,
-    spaceBetween: 10,
-    slidesPerGroup: 1,
+  function makeSlide(): void {
+    new Swiper(".sw_trip", {
+      slidesPerView: 5,
+      spaceBetween: 10,
+      slidesPerGroup: 1,
 
-    navigation: {
-      nextEl: ".trip_slide_next",
-      prevEl: ".trip_slide_prev",
-    },
+      navigation: {
+        nextEl: ".trip_slide_next",
+        prevEl: ".trip_slide_prev",
+      },
 
-    breakpoints: {
-      960: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+      breakpoints: {
+        960: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1280: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
       },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1280: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      },
-    },
-  });
+    });
+  }
+
+  makeHtml();
+  makeSlide();
 });

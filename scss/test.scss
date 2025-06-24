@@ -1,0 +1,32 @@
+// 중첩 (Nesting)
+.card {
+  border: 1px solid #000;
+  .title {
+    position: relative;
+    font-weight: 700;
+    &:hover{
+      color: aqua;
+    }
+    &:active{
+      color: olive;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background-color: red;
+      left: 0;
+      top: 0;
+    }
+  }
+  .content {
+    color: orange;
+    button {
+      border: 1px solid green;
+      &:hover {
+        background-color: red;
+      }
+    }
+  }
+}

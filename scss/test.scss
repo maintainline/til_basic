@@ -1,32 +1,31 @@
-// 중첩 (Nesting)
-.card {
-  border: 1px solid #000;
-  .title {
-    position: relative;
-    font-weight: 700;
-    &:hover{
-      color: aqua;
-    }
-    &:active{
-      color: olive;
-    }
-    &::after{
-      content: "";
-      position: absolute;
-      width: 32px;
-      height: 32px;
-      background-color: red;
-      left: 0;
-      top: 0;
+@import "val";
+@import "mixins";
+
+.wrap {
+  position: relative;
+  // mixins 사용
+  @include flex-center;
+  // 변수 사용하기
+  width: $width-screen;
+  .header {
+    // mixins 사용
+    @include flex-center;
+    // 변수 사용하기
+    width: $width-screen;
+    .inner {
+      @include border-fn(red);
+      height: 100px;
+      // 변수 사용하기
+      width: $pc-w;
     }
   }
-  .content {
-    color: orange;
-    button {
-      border: 1px solid green;
-      &:hover {
-        background-color: red;
-      }
-    }
+  .main {
+    @include border-fn(#fff);
+    // 변수 사용하기
+    width: $width-screen;
+  }
+  .footer {
+    // 변수 사용하기
+    width: $width-screen;
   }
 }

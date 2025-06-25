@@ -1,31 +1,25 @@
-.card {
-  border: 1px solid #000;
-}
-.card .title {
+.wrap {
   position: relative;
-  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1280px;
 }
-.card .title:hover {
-  color: aqua;
+.wrap .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1280px;
 }
-.card .title:active {
-  color: olive;
+.wrap .header .inner {
+  border: 5px solid red;
+  height: 100px;
+  width: 760px;
 }
-.card .title::after {
-  content: "";
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  background-color: red;
-  left: 0;
-  top: 0;
+.wrap .main {
+  border: 5px solid #fff;
+  width: 1280px;
 }
-.card .content {
-  color: orange;
-}
-.card .content button {
-  border: 1px solid green;
-}
-.card .content button:hover {
-  background-color: red;
-} /*# sourceMappingURL=test.css.map */
+.wrap .footer {
+  width: 1280px;
+}/*# sourceMappingURL=test.css.map */

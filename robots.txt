@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://til-basic-dusky.vercel.app/Sitemap.xml

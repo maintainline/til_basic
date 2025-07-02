@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const linkSite = document.querySelector(".link_site");
   // 메인메뉴 a 태그들 :  여러개 (all)
   const mainMenuA = document.querySelectorAll(".main_menu li a");
-  console.log(mainMenuA);
+  // console.log(mainMenuA);
   // 멤버메뉴 a 태그들 : 여러개 (all)
   const memberMenuA = document.querySelectorAll(".member_menu li a");
   //모바일 메뉴 참조

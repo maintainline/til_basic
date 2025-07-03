@@ -1,92 +1,204 @@
 [
   {
-    "id": 1,
-    "link": "#",
-    "city": "마카오",
-    "image": "https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/2bcd15b0-723d-47e2-96a2-848deb9e5d89",
-    "alt": "마카오",
-    "sale": "6월 할인 최저가",
-    "title": "마카오 하우스 오브 댄싱 워터 쇼 티켓",
-    "price": "120,000"
+    "카테고리": "마감임박",
+    "데이터": [
+      {
+        "id": 1,
+        "link": "#",
+        "city": "마카오",
+        "image": "https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/2bcd15b0-723d-47e2-96a2-848deb9e5d89",
+        "alt": "마카오",
+        "sale": "6월 할인 최저가",
+        "title": "마카오 하우스 오브 댄싱 워터 쇼 티켓",
+        "price": "120,000"
+      },
+      {
+        "id": 2,
+        "link": "#",
+        "city": "다낭/호이안",
+        "image": "http://tourimage.interpark.com/product/tour/00161/B10/500/B1016703_6_467.jpg",
+        "alt": "다낭/호이안",
+        "sale": "VIP 패스트트랙 제공",
+        "title": "다낭 자유여행 5/6일 신라모노그램,중식1회+망고빙수,패스트트랙+왕복픽업 포함",
+        "price": "609,000"
+      },
+      {
+        "id": 3,
+        "link": "#",
+        "city": "도쿄",
+        "image": "https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/d086c8c5-652a-4c6c-87f8-f0ecd3ae7041",
+        "alt": "도쿄",
+        "sale": "단독 10% 할인",
+        "title": "[최저가] 도쿄 타워 전망대 입장권 (150m) 단독 할인",
+        "price": "13,399"
+      },
+      {
+        "id": 4,
+        "link": "#",
+        "city": "시드니",
+        "image": "https://media.triple.guide/triple-cms/c_fill,f_auto,h_450,w_580/7d4e0967-a6b5-47ae-92a8-9c5c1773b4a4.jpeg",
+        "alt": "시드니",
+        "sale": "노팁/노옵션",
+        "title": "[NO팁/NO옵션][품격] 시드니 완전일주 6일 &lt;전일정4성&gt;",
+        "price": "1,749,000"
+      },
+      {
+        "id": 5,
+        "link": "#",
+        "city": "강원",
+        "image": "https://media.interparkcdn.net/interpark-tour/image/upload/w_640,h_410,c_limit/v1747962603/domstay/4c607300fc404181.jpg",
+        "alt": "강원",
+        "sale": "패밀리 스탠다드 + 웰컴드링크 2인 + 할인권",
+        "title": "소노벨 비발디파크 B , C",
+        "price": "126,000"
+      },
+      {
+        "id": 6,
+        "link": "#",
+        "city": "호놀룰루",
+        "image": "https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/18da9cff-8b9c-4fe8-bd20-405aef650a6b.jpeg",
+        "alt": "호놀룰루",
+        "sale": "5성급 인기호텔 15%쿠폰제공",
+        "title": "카라이 와이키키 비치 호텔",
+        "price": "476,500"
+      },
+      {
+        "id": 7,
+        "link": "#",
+        "city": "다낭",
+        "image": "https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/e4bf929f-d808-4069-9508-b948d2d1d2fe.jpeg",
+        "alt": "다낭",
+        "sale": "2024년 오픈 5성급 풀빌라 리조트+10%쿠폰제공",
+        "title": "퓨전 리조트 앤 빌라스 다낭",
+        "price": "158,695"
+      },
+      {
+        "id": 8,
+        "link": "#",
+        "city": "오사카",
+        "image": "https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/54840827-0d86-432d-9d67-70b09b9d1168.jpeg",
+        "alt": "오사카",
+        "sale": "도톤보리 2분거리 3성급호텔",
+        "title": "호텔 포르자 오사카 난바 도톤보리",
+        "price": "131,950"
+      },
+      {
+        "id": 9,
+        "link": "#",
+        "city": "강원",
+        "image": "https://media.interparkcdn.net/interpark-tour/image/upload/w_640,h_410,c_limit/v1739769418/domstay/788e334c9cc14a72.png",
+        "alt": "강원",
+        "sale": "디럭스 더블",
+        "title": "신라스테이 여수 엑스포역",
+        "price": "90,000"
+      }
+    ]
   },
   {
-    "id": 2,
-    "link": "#",
-    "city": "다낭/호이안",
-    "image": "http://tourimage.interpark.com/product/tour/00161/B10/500/B1016703_6_467.jpg",
-    "alt": "다낭/호이안",
-    "sale": "VIP 패스트트랙 제공",
-    "title": "다낭 자유여행 5/6일 신라모노그램,중식1회+망고빙수,패스트트랙+왕복픽업 포함",
-    "price": "609,000"
+    "카테고리": "패키지",
+    "데이터": [
+      {
+        "id": 1,
+        "link": "#",
+        "city": "코타키나발루",
+        "image": "https://media.triple.guide/triple-cms/c_limit,f_au…,w_2048/d3210347-93f9-435b-b2df-9926814adf64.jpeg",
+        "alt": "코타키나발루",
+        "sale": "레이트체크아웃+반딧불투어 포함",
+        "title": "코타키나발루 5일 수트라하버 마젤란 + 17시 레이트체크아웃 + 반딧불 투어 포함",
+        "price": "639,000"
+      },
+      {
+        "id": 2,
+        "link": "#",
+        "city": "보라카이",
+        "image": "https://media.triple.guide/triple-cms/c_limit,f_au…,w_2048/6fa32edb-cc26-4b97-882c-f67d34c9f232.jpeg",
+        "alt": "보라카이",
+        "sale": "자유일정 포함",
+        "title": "[베스트셀러] 미서부 8박10일, 4대캐년+홀슈밴드+3대도시, 꽉찬일정, 여행후기 인증상품",
+        "price": "418,400"
+      },
+      {
+        "id": 3,
+        "link": "#",
+        "city": "다낭/호이안",
+        "image": "https://media.triple.guide/triple-cms/c_limit,f_au…,w_2048/5f316fc7-20d3-4a70-a206-c50075f704e1.jpeg",
+        "alt": "다낭/호이안",
+        "sale": "4명 이상 룸UP",
+        "title": "다낭/호이안 5일, 나만리트리트 선릿 스위트룸, 우리함께, 야경투어3회+필수일정 포함",
+        "price": "399,000"
+      },
+      {
+        "id": 4,
+        "link": "#",
+        "city": "사이판",
+        "image": "https://media.triple.guide/triple-cms/c_limit,f_au…,w_2048/894c7e42-2db9-419d-b9d0-21b02ea64609.jpeg",
+        "alt": "사이판",
+        "sale": "전일정 식사포함",
+        "title": "사이판 4일, PIC 리조트, 골드카드, 제주항공",
+        "price": "1,049,000"
+      },
+      {
+        "id": 5,
+        "link": "#",
+        "city": "미서부",
+        "image": "https://media.triple.guide/triple-cms/c_limit,f_au…,w_2048/c9a80f1d-10ff-491b-bbab-57b78125ca58.jpeg",
+        "alt": "미서부",
+        "sale": "4대캐년+홀슈밴드+3대도시",
+        "title": "[베스트셀러] 미서부 8박10일, 4대캐년+홀슈밴드+3대도시, 꽉찬일정, 여행후기 인증상품",
+        "price": "2,991,000"
+      },
+      {
+        "id": 6,
+        "link": "#",
+        "city": "두바이/튀르키예",
+        "image": "https://img.modetour.com/eagle/photoimg/11514/bfile/635699851301546409.png",
+        "alt": "두바이/튀르키예",
+        "sale": "전일정 특급호텔",
+        "title": "두바이/튀르키예 일주 9일 <두바이 씨티투어/힐튼2박/온천호텔포함/10대 특식/4대특전포함>",
+        "price": "1,099,000"
+      },
+      {
+        "id": 7,
+        "link": "#",
+        "city": "다낭",
+        "image": "https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/e4bf929f-d808-4069-9508-b948d2d1d2fe.jpeg",
+        "alt": "다낭",
+        "sale": "2024년 오픈 5성급 풀빌라 리조트+10%쿠폰제공",
+        "title": "퓨전 리조트 앤 빌라스 다낭",
+        "price": "158,695"
+      },
+      {
+        "id": 8,
+        "link": "#",
+        "city": "오사카",
+        "image": "https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/54840827-0d86-432d-9d67-70b09b9d1168.jpeg",
+        "alt": "오사카",
+        "sale": "도톤보리 2분거리 3성급호텔",
+        "title": "호텔 포르자 오사카 난바 도톤보리",
+        "price": "131,950"
+      },
+      {
+        "id": 9,
+        "link": "#",
+        "city": "강원",
+        "image": "https://media.interparkcdn.net/interpark-tour/image/upload/w_640,h_410,c_limit/v1739769418/domstay/788e334c9cc14a72.png",
+        "alt": "강원",
+        "sale": "디럭스 더블",
+        "title": "신라스테이 여수 엑스포역",
+        "price": "90,000"
+      }
+    ]
   },
   {
-    "id": 3,
-    "link": "#",
-    "city": "도쿄",
-    "image": "https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/d086c8c5-652a-4c6c-87f8-f0ecd3ae7041",
-    "alt": "도쿄",
-    "sale": "단독 10% 할인",
-    "title": "[최저가] 도쿄 타워 전망대 입장권 (150m) 단독 할인",
-    "price": "13,399"
+    "카테고리": "국내숙소",
+    "데이터": []
   },
   {
-    "id": 4,
-    "link": "#",
-    "city": "시드니",
-    "image": "https://media.triple.guide/triple-cms/c_fill,f_auto,h_450,w_580/7d4e0967-a6b5-47ae-92a8-9c5c1773b4a4.jpeg",
-    "alt": "시드니",
-    "sale": "노팁/노옵션",
-    "title": "[NO팁/NO옵션][품격] 시드니 완전일주 6일 &lt;전일정4성&gt;",
-    "price": "1,749,000"
+    "카테고리": "해외숙소",
+    "데이터": []
   },
   {
-    "id": 5,
-    "link": "#",
-    "city": "강원",
-    "image": "https://media.interparkcdn.net/interpark-tour/image/upload/w_640,h_410,c_limit/v1747962603/domstay/4c607300fc404181.jpg",
-    "alt": "강원",
-    "sale": "패밀리 스탠다드 + 웰컴드링크 2인 + 할인권",
-    "title": "소노벨 비발디파크 B , C",
-    "price": "126,000"
-  },
-  {
-    "id": 6,
-    "link": "#",
-    "city": "호놀룰루",
-    "image": "https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/18da9cff-8b9c-4fe8-bd20-405aef650a6b.jpeg",
-    "alt": "호놀룰루",
-    "sale": "5성급 인기호텔 15%쿠폰제공",
-    "title": "카라이 와이키키 비치 호텔",
-    "price": "476,500"
-  },
-  {
-    "id": 7,
-    "link": "#",
-    "city": "다낭",
-    "image": "https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/e4bf929f-d808-4069-9508-b948d2d1d2fe.jpeg",
-    "alt": "다낭",
-    "sale": "2024년 오픈 5성급 풀빌라 리조트+10%쿠폰제공",
-    "title": "퓨전 리조트 앤 빌라스 다낭",
-    "price": "158,695"
-  },
-  {
-    "id": 8,
-    "link": "#",
-    "city": "오사카",
-    "image": "https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/54840827-0d86-432d-9d67-70b09b9d1168.jpeg",
-    "alt": "오사카",
-    "sale": "도톤보리 2분거리 3성급호텔",
-    "title": "호텔 포르자 오사카 난바 도톤보리",
-    "price": "131,950"
-  },
-  {
-    "id": 9,
-    "link": "#",
-    "city": "강원",
-    "image": "https://media.interparkcdn.net/interpark-tour/image/upload/w_640,h_410,c_limit/v1739769418/domstay/788e334c9cc14a72.png",
-    "alt": "강원",
-    "sale": "디럭스 더블",
-    "title": "신라스테이 여수 엑스포역",
-    "price": "90,000"
+    "카테고리": "투어/입장권",
+    "데이터": []
   }
 ]

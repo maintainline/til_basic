@@ -1,27 +1,40 @@
 window.addEventListener("DOMContentLoaded", function () {
   // 1.데이터 부르기
-  const TOUR_DATA_JSON = [
-    "tour.json",
-    "tour.json",
-    "tour.json",
-    "tour.json",
-    "tour.json",
-  ];
-  async function getData(file) {
+
+  let oringinData;
+
+  async function getData() {
     try {
-      const res = await fetch(`/apis/${file}`);
+      const res = await fetch("/apis/tour.json");
       const result = await res.json();
-      makeHtml(result);
+      oringinData = result;
+      makeCategoryHtml();
+      makeHtml();
     } catch (error) {
       console.log(error);
     }
   }
-  // 2.html 만들기
-  function makeHtml(data) {
-    let html = "";
+  // 카테고리 버튼 생성
+  function makeCategoryHtml() {
+    let cateHtml = "";
+    for (let i = 0; i < oringinData.length; i++) {
+      const obj = oringinData[i];
+      const tag = `<li><button>${obj.카테고리}</button></li>`;
+      cateHtml = cateHtml + tag;
+    }
+    const where = document.querySelector(".tour_button_list");
+    where.innerHTML = cateHtml;
+    makeButton();
+  }
 
-    for (let i = 0; i < data.length; i++) {
-      const obj = data[i];
+  // 2. 슬라이드 html 만들기
+  let showIndex = 0;
+  function makeHtml() {
+    let html = "";
+    const showData = oringinData[showIndex].데이터;
+    for (let i = 0; i < showData.length; i++) {
+      const obj = showData[i];
+
       const tag = `
               <div class="swiper-slide">
               <a href="#" class="tour_item">
@@ -42,13 +55,12 @@ window.addEventListener("DOMContentLoaded", function () {
       html = html + tag;
     }
     // 실제 html 태그에 배치하기
-    const tourItem = document.querySelector(".sw_tour .swiper-wrapper");
-    // 기존의 html 내용을 삭제한다.
-    tourItem.innerHTML = "";
+    const where = document.querySelector(".sw_tour .swiper-wrapper");
     // 다시 새로운 내용을 채운다.
-    tourItem.innerHTML = html;
+    where.innerHTML = html;
     makeSlide();
   }
+
   // 3. 슬라이드 만들기
   let swTour;
   function makeSlide() {
@@ -94,30 +106,29 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 
   // 4. 버튼 포커스 만들기
-  const bts = document.querySelectorAll(".tour_button_list li button");
-  //포커스 되었을때 적용될 포커스 이름
-  const focusName = "tour_focus";
 
   function makeButton() {
-    bts.forEach(function (item, index) {
+    const btlist = document.querySelectorAll(".tour_button_list li button");
+    btlist[showIndex].classList.add("tour_focus");
+    btlist.forEach(function (item, index) {
       item.addEventListener("click", function () {
         // 모든 버튼에서 tour_focus 클래스 제거
         removeFocus();
+        showIndex = index;
         // 클릭된 버튼은 tour_focus 클래스 추가
-        item.classList.add(focusName);
-
-        // json을 다시 불러들인다.
-        getData(TOUR_DATA_JSON[index]);
+        item.classList.add("tour_focus");
+        makeHtml();
       });
     });
   }
   // 버튼에서 포커스 제거하는 기능
   function removeFocus() {
-    bts.forEach(function (item) {
-      item.classList.remove(focusName);
+    const btlist = document.querySelectorAll(".tour_button_list li button")
+    btlist.forEach(function (item) {
+      item.classList.remove("tour_focus");
     });
   }
 
-  getData(TOUR_DATA_JSON[0]);
-  makeButton();
+  // makeButton();
+  getData();
 });
